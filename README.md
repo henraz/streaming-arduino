@@ -4,7 +4,7 @@ Este projeto tem como objetivo coletar dados de sensores de luminosidade, temper
 
 ## Arquitetura do projeto
 
-![Image](img/architecture)
+![Image](img/architecture.png)
 
 ## Montagem do circuito
 
