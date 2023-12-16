@@ -1,6 +1,12 @@
-# Projeto de Streaming de Dados para o Google Cloud Platform
+# Streaming de Dados de sensores
 
-Este projeto tem como objetivo coletar dados de sensores usando um Arduino, enviar esses dados para o BigQuery (GCP) usando o Google Pub/Sub e Dataflow.
+Este projeto tem como objetivo coletar dados de sensores de luminosidade, temperatura ambiente e umidade relativa do ar usando um Arduino e enviar esses dados para o BigQuery (GCP) usando o Google Pub/Sub e Dataflow.
+
+## Arquitetura do projeto
+
+![Image](img/architecture)
+
+## Montagem do circuito
 
 ## Estrutura do Projeto
 
@@ -25,7 +31,7 @@ O projeto é composto por quatro componentes:
 ## Executando o Projeto
 
 1. **Configuração do GCP:**
-   - Faça as alterações desejadas para os nomes do Tópico, Subscription e nomes de tabelas;
+   - Faça as alterações desejadas para os nomes do Tópico, Assinatura e nomes de tabelas;
    - Execute o script `main.sh` para criar o tópico e a assinatura no GCP Pub/Sub.
   
 2. **Leitura dos dados dos sensores:**
@@ -38,9 +44,7 @@ O projeto é composto por quatro componentes:
 4. **Processamento de Dados no GCP:**
    - Execute o script `dataflow.py` para processar os dados e os armazenar no BigQuery.
 
-## Arquitetura do projeto
 
-## Montagem do circuito
 
 ## Requisitos
 
